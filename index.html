@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My recepie book</title>
+        <style>
+            body{
+                background-color:#1F0C03;
+                color:rgb(14, 153, 132);
+                font-family: monospace;
+                font-size: 14px;
+                margin-left: 1%;
+            }
+            ol{
+                color:rgb(218, 144, 219);
+            }
+            a{
+                color:rgb(195, 214, 51);
+                font-family:cursive , sans-serif;
+            }
+            h1{
+                color:rgb(247, 69, 10);
+                font-size: 3em;
+            }
+            h2{
+                color:rgb(135, 167, 237);
+                font-family:cursive , sans-serif;
+                font-size: 2em;
+                margin-left: 2%
+/*                text-align: center;*/
+            }
+            h3{
+                color:rgb(125, 153, 14);
+                text-decoration: underline;
+                font-size: 1.8em;
+                margin-left: 5%;
+            }
+            table{
+                margin-right: 5%;
+                margin-left: 5%;
+/*                border-top: solid;*/
+/*                border-right: solid;*/
+/*                border-left: solid;*/
+                border-color: burlywood;
+                border-collapse: separate;
+                border-spacing: 2px;
+                border: solid;
+            }
+            thead{
+                color:rgb(95, 237, 33);
+                font-family:sans-serif;
+                text-align: center;
+                
+            }
+            th,td{
+/*
+                border-bottom: solid;
+                border-right: solid;
+*/
+                border: solid;
+                border-color: burlywood;
+                border-spacing: 0px;
+/*                padding: ;*/
+            }
+            tbody{
+                color:rgb(92, 212, 40);
+                font-family:monospace ;
+                text-align: center;
+            }
+            strong{
+                color:rgb(114, 166, 91);
+            }
+            div{
+                background-color: blueviolet;
+            }
+            
+            #contents{
+/*                text-align: center;*/
+                margin-left: 5%;
+            }
+            
+/*
+            .inside-content-ordered-list{
+                text-align: center;
+                margin-right: 5%;
+                margin-left: 0%;
+            }
+*/
+            #content-ordered-list{
+/*                text-align: center;*/
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+             #top-of-page{
+                background-color:rgb(61, 54, 49);
+                font-family:cursive , sans-serif;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu-divison">
+        <h1 id="top-of-page">Sourav's Recepie Book</h1>
+        <h2 id = "contents">CONTENTS:</h2>
+        <ol id="content-ordered-list">
+            <li><a href="#non-veg">Non-veg section</a></li>
+            <ol  class="inside-content-ordered-list">
+                <li><a href="#chicken-biriyani">Chicken Biriyani</a></li>
+                <li><a href="#mutton-biriyani">Mutton Biriyani</a></li>
+            </ol>
+            <li><a href="#veg">Veg section</a></li>
+            <ol class="inside-content-ordered-list">
+                <li><a href="#taheri">Taheri</a></li>
+                <li><a href="#fried-rice">Fried Rice</a></li>
+            </ol>
+        </ol>
+        </div>
+        <h2 id="non-veg">Non-Veg Section<img src="https://www.kasandbox.org/programming-images/avatars/leaf-red.png" width="70"></h2>
+        <p>Here we will discuss about the delicious non-veg recepies which can win over any non-veg eating hearts.</p>
+        <h3 id="chicken-biriyani">Chicken Biriyani</h3>
+        <p>For <strong>Chicken Biriyani</strong> you will be requiring the following things:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>items</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rice</td>
+                    <td>2 kgs</td>
+                    <td>Rs200</td>
+                </tr>
+                <tr>
+                    <td>spice</td>
+                    <td>500 g</td>
+                    <td>Rs2000</td>
+                </tr>
+                <tr>
+                    <td>chicken</td>
+                    <td>2 kgs</td>
+                    <td>Rs300</td>
+                </tr>
+            </tbody>
+        </table>
+    <!-- mutton biriyani -->    
+        <h3 id="mutton-biriyani">Mutton Biriyani</h3>
+        <p>For <strong>Mutton Biriyani</strong> you will be requiring the following things:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>items</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rice</td>
+                    <td>2 kgs</td>
+                    <td>Rs200</td>
+                </tr>
+                <tr>
+                    <td>spice</td>
+                    <td>500 g</td>
+                    <td>Rs2000</td>
+                </tr>
+                <tr>
+                    <td>Mutton</td>
+                    <td>2 kgs</td>
+                    <td>Rs3000</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- veg section -->
+        <h2 id="veg">Veg Section<img src="https://www.kasandbox.org/programming-images/avatars/leaf-green.png" height="70"></h2>
+        <p>Here we will discuss about the delicious veg recepies which can win over any veg eating hearts.</p>
+        <h3 id="taheri">Taheri</h3>
+        <p>For <strong>taheri</strong> you will be requiring the following things:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>items</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rice</td>
+                    <td>2 kgs</td>
+                    <td>Rs200</td>
+                </tr>
+                <tr>
+                    <td>spice</td>
+                    <td>500 g</td>
+                    <td>Rs2000</td>
+                </tr>
+                <tr>
+                    <td>vegetables</td>
+                    <td>2 kgs</td>
+                    <td>Rs300</td>
+                </tr>
+            </tbody>
+        </table>
+    <!-- friedrice -->    
+        <h3 id="fried-rice">Fried Rice</h3>
+        <p>For <strong>Fried Rice</strong> you will be requiring the following things:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>items</th>
+                    <th>quantity</th>
+                    <th>price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rice</td>
+                    <td>2 kgs</td>
+                    <td>Rs200</td>
+                </tr>
+                <tr>
+                    <td>spice</td>
+                    <td>500 g</td>
+                    <td>Rs2000</td>
+                </tr>
+                <tr>
+                    <td>vegetables</td>
+                    <td>1 kgs</td>
+                    <td>Rs100</td>
+                </tr>
+            </tbody>
+        </table>
+        
+       <p><a href="#top-of-page"><h6>GO TO TOP</h6></a> </p>
+        
+    </body>
+    
+</html>
